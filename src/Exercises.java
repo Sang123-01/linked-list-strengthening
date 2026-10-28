@@ -11,8 +11,16 @@ public class Exercises {
      * @param head the head of the linked list
      * @return the length of the list
      */
-    public static int length(ListNode head) {
-        return -1;
+    public static int length(ListNode head) 
+    {
+        int count = 0;
+        ListNode current = head;
+        while(current != null)
+        {
+            count++;
+            current = current.next;
+        }
+        return count;
     }
 
     /**
@@ -28,7 +36,9 @@ public class Exercises {
      * @param toAdd the value to add to the front
      * @return the new head of the linked list
      */
-    public static ListNode prepend(ListNode head, int toAdd) {
+    public static ListNode prepend(ListNode head, int toAdd) 
+    {
+        
         return null;
     }
 
