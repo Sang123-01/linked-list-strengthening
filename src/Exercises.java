@@ -38,8 +38,9 @@ public class Exercises {
      */
     public static ListNode prepend(ListNode head, int toAdd) 
     {
-        
-        return null;
+        ListNode NewNode = new ListNode(toAdd);
+        NewNode.next = head;
+        return NewNode;
     }
 
     /**
